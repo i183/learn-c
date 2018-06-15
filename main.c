@@ -8,10 +8,7 @@
 #include "structure/queue.h"
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 0, 0};
-    memcpy(arr + 2, arr + 1, 6 * sizeof(int));
-    for (int i = 0; i < 9; ++i) {
-        printf("%d\n", arr[i]);
-    }
+    Stack pStructure = newStack(1);
+    outStackForInt(pStructure);
     return 0;
 }

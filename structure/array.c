@@ -1,8 +1,17 @@
+#include <stdlib.h>
 #include "array.h"
 #include "../common.h"
 
-Array newArray(int typeSize, int initialCapacity) {
+int isOutRange() {
 
+}
+
+Array newArray(int typeSize, int initialCapacity) {
+    Array arr = malloc(sizeof(struct ArrayStructure));
+    arr->data = malloc(initialCapacity * typeSize);
+    arr->typeSize = typeSize;
+    arr->capacity = initialCapacity;
+    arr->size = 0;
 }
 
 Array newArrayDefault(int typeSize) {

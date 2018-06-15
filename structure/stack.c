@@ -28,8 +28,7 @@ void inStack(Stack sp, void *item) {
 
 void *outStack(Stack sp, void *dst) {
     if (isStackEmpty(sp)) {
-        resetNull(dst, sp->typeSize);
-        return dst;
+        exit(EXIT_FAILURE);
     }
 
     memcpy(dst, sp->head->data, sp->typeSize);

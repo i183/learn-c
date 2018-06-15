@@ -16,6 +16,8 @@ typedef struct ArrayStructure {
 
     int size;
 
+    int capacity;
+
 } *Array;
 
 /**
