@@ -6,7 +6,7 @@
 #define LEARN_C_ARRAY_H
 
 #define ARRAY_DEFAULT_CAPACITY 10
-#define ARRAY_INTENSITY 1.6
+#define ARRAY_EXPAND_INTENSITY 1.6
 
 typedef struct ArrayStructure {
 
@@ -106,6 +106,33 @@ void addArrayForDouble(Array arr, double item);
  */
 void addArrayForChar(Array arr, char item);
 
+/**
+ * 指定位置插入Int
+ * @param arr
+ * @param item
+ */
+void insertArrayForInt(Array arr, int index, int item);
+
+/**
+ * 指定位置插入Long
+ * @param arr
+ * @param item
+ */
+void insertArrayForLong(Array arr, int index, long item);
+
+/**
+ * 指定位置插入Double
+ * @param arr
+ * @param item
+ */
+void insertArrayForDouble(Array arr, int index, double item);
+
+/**
+ * 指定位置插入Char
+ * @param arr
+ * @param item
+ */
+void insertArrayForChar(Array arr, int index, char item);
 
 /**
  * 获取Int数据

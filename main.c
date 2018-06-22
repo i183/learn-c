@@ -6,9 +6,10 @@
 #include "tree.h"
 #include "structure/stack.h"
 #include "structure/queue.h"
+#include "structure/array.h"
 
 int main() {
-    Stack pStructure = newStack(1);
-    outStackForInt(pStructure);
+    Stack s = newStack(sizeof(int));
+    outStackForInt(s);
     return 0;
 }

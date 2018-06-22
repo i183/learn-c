@@ -34,7 +34,7 @@ void inQueue(Queue q, void *item) {
 
 void *outQueue(Queue q, void *dst) {
     if (isQueueEmpty(q)) {
-        exit(EXIT_FAILURE);
+        error("Queue is empty!");
     }
 
     memcpy(dst, q->head->data, q->typeSize);
