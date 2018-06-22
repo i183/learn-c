@@ -1,5 +1,5 @@
 #include "queue.h"
-#include "../common.h"
+#include "../common/global.h"
 #include <stdlib.h>
 #include <string.h>
 

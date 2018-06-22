@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "array.h"
-#include "../common.h"
+#include "../common/global.h"
 
 boolean isOutRange(Array arr, int index) {
     if (index > arr->size - 1 || index < 0) {
